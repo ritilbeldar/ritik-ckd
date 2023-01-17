@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #564C4C;
+}
+.navbar{
+    width: 100%;
+    height: 5vmax;
+    background-color: #836F6F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 4vmax;
+}
+
+.navbar img{
+    height: 40px;
+    animation: navimg 1s 0.5s both;
+    opacity: 0;
+}
+.nav1{
+    margin-left: -5%;
+}
+.nav1 ul{
+    width: 35vmax;
+    display: flex;
+    justify-content: space-between;
+    animation: navbar 1.5s 1.3s both;
+    opacity: 0;
+}
+.nav1 a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.779);
+    font-weight: 800;
+}
+.nav2 ul{
+    width: 10vmax;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    animation: navbar 1.5s 1.3s both;
+    opacity: 0;
+}
+.nav2 a{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.779);
+    font-weight: 800;
+}
+.navbar a:hover{
+    color: white;
+}
+.navbar p{
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: navbar 1.5s 1.3s both;
+    opacity: 0;
+}
+.navbar input{
+    background-color: #564C4C;
+    border: none;
+    border-radius: 20px;
+    height: 2vmax;
+    width: 25vmax;
+    padding: 3px 0 3px 35px;
+}
+.ri-search-line{
+    position: absolute;
+    left: 3.5%;
+    color: white;
+}
+::placeholder{
+    color: #CBA9A9;
+}
+@keyframes navbar{
+    from {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-0);
+        opacity: 1;
+    }
+}
+@keyframes navimg{
+    from {
+        transform: translatex(-5vh);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(-0);
+        opacity: 1;
+    }
+}
+.bgimg{
+    width: 100%;
+    height:55vmax;
+    background-color: red;
+    background: url(/bg\ img\ cloth.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-top: 0.1px solid #836F6F ;
+
+}
+.bgimg button{
+    margin-top: 46.5vmax;
+    margin-left: 74.7vmax;
+    cursor: pointer;
+    padding: 12px 19px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border: 3.5px solid white;
+    background-color: blueviolet;
+    color: white;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top1{
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.all-top1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 39vmax;
+    width: 22vmax;
+}
+.all-top1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #32365C;
+    width: 30vmax;
+    font-size: 28px;
+    color: white;
+}
+.kid img{
+    width: 350px;
+    height: 10px;
+}
+.choice img{
+    height: 500px;
+}
+.choice h1{
+    border-bottom: 3px solid white;
+    margin-top: 5%;
+    font-size: 60px;
+    padding: 0 0 20px 0;
+    color: rgba(255, 255, 255, 0.831);
+}
+.top2{
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.all-top2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 100px;
+    margin-top: -2%;
+    background-color: #32365C;
+    color: white;
+    font-size: 28px;
+}
+.top2 img{
+    height: 450px;
+}
+.hoddie img{
+    width: 22vmax;
+}
+.swetshiet img{
+    width: 22vmax;
+}
+.swetshiet h2{
+    width: 22vmax;
+}
+.top3{
+    display: flex;
+    justify-content: space-between;
+    width: 62vmax;
+    margin-top: 5%;
+}
+.all-top3 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 88px;
+    margin-top: -2%;
+    background-color: #32365C;
+    color: white;
+    font-size: 28px;
+}
+.top3 img{
+    height: 400px;
+}
+.women-foot img{
+    width: 430px;
+}
+.last{
+    height: 15vmax;
+    background-color: #32365ca9;
+    margin-top: 5%;
+    display: flex;
+    padding: 0 4vmax;
+}
+.last-left{
+    margin-top: 3%;
+    display: flex;
+    width: 60vmax;
+    justify-content: space-between;
+}
+.last-left input{
+    width: 15vmax;
+    margin-top: 5%;
+    height: 2vmax;border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 2px 0 2px 30px;
+}
+.last ul{
+    list-style-type: none;
+}
+.last h2{
+    font-size: 18px;
+    color: white;
+}
+.last li{
+    color: rgba(255, 255, 255, 0.724);
+    margin-top: 2.5%;
+    font-weight: 200;
+}
+
+.last-img{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+.last-img img{
+    height: 100px;
+}
+.all-top1,.all-top2,.all-top3{
+    overflow: hidden;
+}
+.all-top1 img,.all-top2 img,.all-top3 img{
+    transition: .30s;
+    cursor: pointer;
+}
+.all-top1 img:hover,.all-top2 img:hover,.all-top3 img:hover{
+    transform: scale(1.1);
+}
+
+
+@media(min-width:1500px){
+    .navbar i{
+        display: none;
+    }
+}
+@media(max-width:451px){
+    .navbar a{
+        display: none;
+    }
+    .navbar p{
+        display: none;
+    }
+    .navbar img{
+        height: 28px;
+    }
+    .bgimg{
+        height: 40vmax;
+    }
+    .bgimg button{
+        display: none;
+    }
+    .choice h1{
+        font-size: 30px;
+    }
+    .top1{
+        flex-direction: column;
+    }
+    .all-top1{
+        height: 100vmax;
+        width: 50vmax;
+        margin-top: 5%;
+    }
+    .all-top1 h2{
+        width: 100vmax;
+    }
+    .top2{
+        flex-direction: column;
+    }
+    .all-top2{
+        /* margin-top: 10%; */
+    }
+    .all-top2 img{
+        margin-top: 5%;
+        width: 50vmax;
+    }
+    .all-top2 h2{
+        width: 50vmax;
+    }
+    .top3{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .all-top3{
+        margin-top: 5%;
+    }
+    .last{
+        height: 33vmax;
+    }
+    .last h2{
+        font-size: 10px;
+    }
+    .last li{
+        font-size: 10px;
+    }
+    .last-img{
+        margin-left: -20%;
+        margin-top: 20%;
+
+    }
+    .last input{
+        padding: 10px;
+        font-size: 10px;
+        /* height: 10px; */
+    }
+    .last img{
+        height: 45px;
+    }
+}
